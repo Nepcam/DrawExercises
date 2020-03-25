@@ -30,6 +30,9 @@
         {
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.buttonDraw = new System.Windows.Forms.Button();
+            this.textBoxRed = new System.Windows.Forms.TextBox();
+            this.textBoxGreen = new System.Windows.Forms.TextBox();
+            this.textBoxBlue = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,17 +56,42 @@
             this.buttonDraw.UseVisualStyleBackColor = false;
             this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
             // 
+            // textBoxRed
+            // 
+            this.textBoxRed.Location = new System.Drawing.Point(13, 387);
+            this.textBoxRed.Name = "textBoxRed";
+            this.textBoxRed.Size = new System.Drawing.Size(100, 20);
+            this.textBoxRed.TabIndex = 2;
+            // 
+            // textBoxGreen
+            // 
+            this.textBoxGreen.Location = new System.Drawing.Point(120, 386);
+            this.textBoxGreen.Name = "textBoxGreen";
+            this.textBoxGreen.Size = new System.Drawing.Size(100, 20);
+            this.textBoxGreen.TabIndex = 3;
+            // 
+            // textBoxBlue
+            // 
+            this.textBoxBlue.Location = new System.Drawing.Point(227, 385);
+            this.textBoxBlue.Name = "textBoxBlue";
+            this.textBoxBlue.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBlue.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxBlue);
+            this.Controls.Add(this.textBoxGreen);
+            this.Controls.Add(this.textBoxRed);
             this.Controls.Add(this.buttonDraw);
             this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +99,9 @@
 
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button buttonDraw;
+        private System.Windows.Forms.TextBox textBoxRed;
+        private System.Windows.Forms.TextBox textBoxGreen;
+        private System.Windows.Forms.TextBox textBoxBlue;
     }
 }
 

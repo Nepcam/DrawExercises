@@ -19,6 +19,18 @@ namespace DrawExercises
 
         private void buttonDraw_Click(object sender, EventArgs e)
         {
+            int red = 255, green = 255, blue = 255;
+
+            try
+            {
+                red = int.Parse(textBoxRed.Text);
+                green = int.Parse(textBoxGreen.Text);
+                blue = int.Parse(textBoxBlue.Text);
+            } catch
+            {
+                MessageBox.Show("Error");
+            }
+
             Graphics canvas = pictureBox.CreateGraphics();
             Color col = Color.FromArgb(2, 60, 254);
             Pen outlinePen = new Pen(col, 5);
